@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
        int boardWidth=600;
        int boardHeight=boardWidth;
 
@@ -14,5 +14,6 @@ public class Main {
        SnakeGame snakeGame=new SnakeGame(boardWidth,boardHeight);
        frame.add(snakeGame);
        frame.pack();
+       snakeGame.requestFocus();
     }
 }
